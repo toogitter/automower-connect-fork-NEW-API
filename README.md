@@ -1,6 +1,6 @@
 # Automower-Connect
 
-[![npm](https://badgen.net/npm/v/automower-connect)](https://www.npmjs.com/package/automower-connect)
+[![npm](https://badgen.net/npm/v/automower-connect-new-api)](https://www.npmjs.com/package/automower-connect-new-api)
 
 FORK of https://github.com/jochamsa/automower-connect with NEW API implementation!
 
