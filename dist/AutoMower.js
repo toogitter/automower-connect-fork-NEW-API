@@ -246,7 +246,7 @@ export class AutoMower extends EventEmitter {
         }
         if (m.errorCodeTimestamp != null) {
             this.data.mower.errorCodeTimestamp = m.errorCodeTimestamp;
-            this.errorCodeTimestamp = Moment(m.errorCodeTimestamp);
+            this.errorCodeTimestamp = Moment.unix(m.errorCodeTimestamp);
         }
     }
     processPlannerEventV2(attrs) {
@@ -255,7 +255,7 @@ export class AutoMower extends EventEmitter {
         const p = attrs.planner;
         if (p.nextStartTimestamp != null) {
             this.data.planner.nextStartTimestamp = +p.nextStartTimestamp;
-            this.nextStartTimestamp = Moment(p.nextStartTimestamp);
+            this.nextStartTimestamp = Moment.unix(p.nextStartTimestamp);
         }
         if (p.override && p.override.action != null) {
             const newAction = OverrideAction[p.override.action];
