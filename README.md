@@ -2,7 +2,7 @@
 
 [![npm](https://badgen.net/npm/v/automower-connect)](https://www.npmjs.com/package/automower-connect)
 
-FORK of https://github.com/jochamsa/automower-connect with NEW API implemantation!
+FORK of https://github.com/jochamsa/automower-connect with NEW API implementation!
 
 A nodejs package which allows communicating with the Automower Connect API.
 
